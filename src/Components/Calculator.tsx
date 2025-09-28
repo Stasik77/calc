@@ -64,6 +64,11 @@ export function Calculator() {
                 <Button title={'2'} callBack={() => handleNumberClick('2')} />
                 <Button title={'3'} callBack={() => handleNumberClick('3')} />
                 <Button title={'4'} callBack={() => handleNumberClick('4')} />
+                <Button title={'4'} callBack={() => handleNumberClick('5')} />
+                <Button title={'4'} callBack={() => handleNumberClick('6')} />
+                <Button title={'4'} callBack={() => handleNumberClick('7')} />
+                <Button title={'4'} callBack={() => handleNumberClick('8')} />
+                <Button title={'4'} callBack={() => handleNumberClick('9')} />
                 <Button title={'+'} callBack={() => handleOperationClick('+')} />
                 <Button title={'='} callBack={handleEquals} />
 
