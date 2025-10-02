@@ -20,6 +20,12 @@ export function Calculator() {
         setDisplay('0');
     }
 
+  const handleOperationClick2 = (op: string) => {
+        setPreviousValue(display);
+        setOperation(op);
+        setDisplay('0');
+    }
+
     const handleEquals = () => {
         if (!previousValue || !operation) return;
 
@@ -70,6 +76,7 @@ export function Calculator() {
                 <Button title={'4'} callBack={() => handleNumberClick('8')} />
                 <Button title={'4'} callBack={() => handleNumberClick('9')} />
                 <Button title={'+'} callBack={() => handleOperationClick('+')} />
+                <Button title={'+'} callBack={() => handleOperationClick2('-')} />
                 <Button title={'='} callBack={handleEquals} />
 
                 <Button title={'C'} callBack={handleClear} />
